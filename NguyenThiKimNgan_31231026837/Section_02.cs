@@ -64,15 +64,15 @@ namespace NguyenThiKimNgan_31231026837
         /// </summary>
         public static void Question_03()
         {
-            Console.Write("Enter a number e = ");
-            float e = float.Parse(Console.ReadLine());
+            Console.Write("Enter the first floating point number = ");
+            float num1 = float.Parse(Console.ReadLine());
 
-            Console.Write("Enter a number j = ");
-            float j = float.Parse(Console.ReadLine());
+            Console.Write("Enter the second floating point number = ");
+            float num2 = float.Parse(Console.ReadLine());
 
-            float product1 = e * j;
+            float product1 = num1 * num2;
 
-            Console.WriteLine($"{e} * {j} = {product1}");
+            Console.WriteLine($"{num1} * {num2} = {product1}");
         }
 
         /// <summary>
@@ -145,9 +145,8 @@ namespace NguyenThiKimNgan_31231026837
         public static void Question_08()
         {
             Console.Write("Enter the radius of the circle: ");
-            double radius = double.Parse(Console.ReadLine());
-            const double PI = 3.14; 
-            double area = PI * radius * radius;
+            float radius = float.Parse(Console.ReadLine());
+            double area = Math.Pow(radius, 2) * Math.PI;
 
             Console.WriteLine($"The area of the circle with radius {radius} is {area}.");
         }
