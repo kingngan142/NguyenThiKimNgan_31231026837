@@ -10,16 +10,16 @@ namespace NguyenThiKimNgan_31231026837
     {
         public static void Main()
         {
-            //Question_01();
-            //Question_02();
-            //Question_03();
-            //Question_04();
-            //Question_05();
-            //Question_06();
-            //Question_07(); 
-            //Question_08();
-            //Question_09();
-            //Question_10(); 
+            Question_01();
+            Question_02();
+            Question_03();
+            Question_04();
+            Question_05();
+            Question_06();
+            Question_07(); 
+            Question_08();
+            Question_09();
+            Question_10(); 
 
             Console.WriteLine("Press any key to stop"); 
             Console.ReadKey();
