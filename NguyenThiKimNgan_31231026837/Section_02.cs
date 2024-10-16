@@ -118,8 +118,12 @@ namespace NguyenThiKimNgan_31231026837
         /// </summary>
         public static void Question_06()
         {
-            
-
+            Console.WriteLine("Size of int: " + sizeof(int));
+            Console.WriteLine("Size of float: " + sizeof(float));
+            Console.WriteLine("Size of double: " + sizeof(double));
+            Console.WriteLine("Size of decimal: " + sizeof(decimal));
+            Console.WriteLine("Size of long: " + sizeof(long));
+            Console.WriteLine("Size of short: " + sizeof(short));
         }
 
         /// <summary>
