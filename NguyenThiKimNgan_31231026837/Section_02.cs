@@ -145,8 +145,8 @@ namespace NguyenThiKimNgan_31231026837
         public static void Question_08()
         {
             Console.Write("Enter the radius of the circle: ");
-            float radius = float.Parse(Console.ReadLine());
-            double area = Math.Pow(radius, 2) * Math.PI;
+            double radius = double.Parse(Console.ReadLine());
+            double area = Math.PI * radius * radius;
 
             Console.WriteLine($"The area of the circle with radius {radius} is {area}.");
         }
