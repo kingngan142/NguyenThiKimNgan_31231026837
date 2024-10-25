@@ -58,13 +58,20 @@ namespace NguyenThiKimNgan_31231026837
         public static void Excercise_02()
         {
             Console.Write("Enter the radius of the sphere:  ");
-            double radius = double.Parse(Console.ReadLine());
+            double radius;
 
-            double surface = 4 * radius * radius * Math.PI;
-            Console.WriteLine($"The surface of the sphere with radius {radius} is {surface} !");
+            if (double.TryParse(Console.ReadLine(), out radius) && radius >= 0)
+            {
+                double surface = 4 * radius * radius * Math.PI;
+                Console.WriteLine($"The surface of the sphere with radius {radius} is {surface} !");
 
-            double volume = 4 / 3 * radius * radius * radius * Math.PI;
-            Console.WriteLine($"The volume of the sphere with radius {radius} is {volume} !");
+                double volume = (4.0 / 3) * radius * radius * radius * Math.PI; // Sửa lại đây
+                Console.WriteLine($"The volume of the sphere with radius {radius} is {volume} !");
+            }
+            else
+            {
+                Console.WriteLine("Bán kính phải là số dương!");
+            }
         }
 
 
@@ -73,7 +80,7 @@ namespace NguyenThiKimNgan_31231026837
         /// to calculate the result of adding, subtracting, multiplying and dividing two numbers entered by the user.
         /// </summary>
         public static void Excercise_03()
-        {
+        { 
             Console.WriteLine("Number a =   ");
             int a = int.Parse(Console.ReadLine());
             Console.WriteLine("Number b =   ");
@@ -81,16 +88,24 @@ namespace NguyenThiKimNgan_31231026837
 
             int add = a + b;
             int subtract = a - b;
-            int multiply = a * b;
-            int divide = a / b;
-            int mod = a % b;
+            int multiply = a * b; 
 
-            Console.WriteLine($" {a} + {b} = {add}");
-            Console.WriteLine($" {a} - {b} = {subtract}");
-            Console.WriteLine($" {a} * {b} = {multiply}");
-            Console.WriteLine($" {a} / {b} = {divide}");
-            Console.WriteLine($" {a} % {b} = {mod}");
+            // Kiểm tra chia cho 0
+            if (b != 0)
+            {
+                int divide = a / b;
+                int mod = a % b;
 
+                Console.WriteLine($" {a} + {b} = {add}");
+                Console.WriteLine($" {a} - {b} = {subtract}");
+                Console.WriteLine($" {a} * {b} = {multiply}");
+                Console.WriteLine($" {a} / {b} = {divide}");
+                Console.WriteLine($" {a} % {b} = {mod}"); 
+            }
+            else
+            {
+                Console.WriteLine("Không thể chia cho 0!");
+            }
         }
     }
 }
