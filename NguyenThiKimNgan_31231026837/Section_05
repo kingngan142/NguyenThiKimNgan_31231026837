@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace KimNganTuHoc
+namespace NguyenThiKimNgan_31231026837
 {
-    internal class xoa
+    internal class Section_05
     {
             public static void Main()
             {
